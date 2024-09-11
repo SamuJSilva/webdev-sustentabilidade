@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f6fff6;
+}
+
+.video-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+#video{
+    height: 100vh;
+    width: 98vw;
+    object-fit: cover;
+    filter: blur(4px);
+}
+.title-container{
+    position: absolute;
+    background-color: #01162723;
+    padding: 2em;
+    width: 100%;
+    
+}
+
+.title-container h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 900;
+    text-shadow: 7px 5px 8px #0000005e;
+    text-align: center;
+    color: #DEE7DA;
+    font-size: 2.5em; 
+    padding: 15px;
+}
+
+.title-container h1 strong.TI{
+    text-decoration: underline #3a7ca5;
+}
+
+.title-container h1 strong.sustentabilidade{
+    text-decoration: underline #345830;
+}
+
+
+main{
+    box-shadow: 3px 6px 16px 2px #0000002b;
+    background-color: white;
+    border: 2px solid #3a7ca576;
+    border-radius: 2em;
+    max-width: 70em;
+    margin: auto;
+    margin-top: 2em;
+    padding: 0.5em;
+}
+
+main p {
+    color: #053a62;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+main h2{
+    padding: 0.3em;
+    text-align: center;
+    background-color: #345830;
+    color: #DEE7DA;
+    font-size: 1.6em;
+    border-radius: 11px;
+    box-shadow: 3px 2px 9px 3px rgba(0, 0, 0, 0.156);
+}
+main img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+main aside {
+    background-color: #d0eac7;
+    margin: 1.2em;
+    padding: 0.8em;
+    border-radius: 15px;
+}
+main aside p, h3{
+    margin: 0.3em;
+    padding: 0.3em;
+    font-size: 1.1em;
+    text-align: justify;
+    color: #1e7950;    
+}
+main aside p{
+    color: #053a62;
+}
+main aside a {
+    color: #f6fff6;
+    background-color:#345830;
+}
+main aside a:hover {
+    background-color:#f6fff6;
+    color: #345830;
+}
+
+main a{
+    text-decoration: none;
+    color: #f6fff6;
+    background-color: #6e78cf;
+    padding: 0.1em;
+    border-radius: 8px;
+}
+
+main a:hover{
+    background-color: #f6fff6 ;
+    color:#3747d7;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+main figure figcaption{
+    display: block;
+    margin: auto;
+}
+main figure {
+    display: flex;
+    margin: auto;
+    align-items: normal;
+    flex-direction: column;
+}
+
+main figure a{
+    background-color: white;
+    color: #7dd287;
+}
+
+main figure img{
+    width: 90vw;
+}
+
+.img-container {
+    width: 95vw;
+    height: 30vh; 
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    margin-top: 1em;
+}
+.img-container img {
+    width: 98vw;
+    height: auto;
+    position: absolute;
+    top: -25%;
+}
+
+.img-container img.img-planta{
+    top:-3%;
+}
+
+footer{
+    background: rgb(140,224,151);
+    background: linear-gradient(90deg, rgb(87, 143, 94) 2%, rgba(8,41,66,1) 100%);
+    margin-top: 10px;
+}
+
+footer p{
+    color: white;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+footer a{
+    text-decoration: underline;
+    font-size: 1.2em;
+    color: #d0eac7;
+    padding: 0.1em;
+    border-radius: 0.5em;
+}
+
+footer a:hover{
+    background-color: #53a17e;
+    transition: .3s;
+}
+
+
+@media (min-width: 1024px) {
+    
+    .img-container {
+        width: 98%;
+        height: 28em; 
+    }
+    .img-container img {
+        width: 100%;
+        height: auto;
+
+    }
+    
+    main {
+        max-width: 70em;
+        padding: 1em;
+    }
+
+    main p {
+        font-size: 1.3em;
+    }
+
+    main figure img{
+        width: 50vw;
+    }
+}
